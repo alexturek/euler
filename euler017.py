@@ -1,0 +1,10 @@
+singles = 'onetwothreefourfivesixseveneightnine'
+teens = 'teneleventwelvethirteenfourteenfifteensixteenseventeeneighteennineteen'
+eventens = 'twentythirtyfortyfiftysixtyseventyeightyninety'
+doubledigits = 10 * eventens + 8 * singles
+hundredbatch = singles + teens + doubledigits
+hundred = 'hundred'
+tripledigits = 100 * singles + 900 * hundred + 9 * 99 * 'and' + 9 * hundredbatch
+thousand = 'onethousand'
+total = hundredbatch + tripledigits + thousand
+ans = len(total)
